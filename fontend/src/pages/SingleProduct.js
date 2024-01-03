@@ -7,6 +7,7 @@ import ReactImageZoom from "react-image-zoom";
 import Color from "../components/Color";
 import { TbGitCompare } from "react-icons/tb";
 import { CiHeart } from "react-icons/ci";
+import { Link } from "react-router-dom";
 
 const SingleProduct = () => {
   const props = {
@@ -136,9 +137,11 @@ const SingleProduct = () => {
                       />
                     </div>
                     <div className="d-flex align-items-center gap-30 ms-5">
+                      <Link to="/cart">
                       <button className="button border-0" type="submit">
                         Add To Cart
                       </button>
+                      </Link>
                       <button className="button signup border-0">
                         But It Now
                       </button>
